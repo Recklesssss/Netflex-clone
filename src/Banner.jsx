@@ -8,13 +8,9 @@ function Banner() {
 
     useEffect(() => {
         async function fetchData() {
-            try {
-                const request = await axios.get(requests.fetchNetflixOriginal);
-                const randomIndex = Math.floor(Math.random() * request.data.results.length);
-                setMovie(request.data.results[randomIndex]);
-            } catch (error) {
-                console.error("Error fetching data: ", error);
-            }
+            const request = await axios.get(requests.fetchNetflixOriginal);
+            const randomIndex = Math.floor(Math.random() * request.data.results.length);
+            setMovie(request.data.results[randomIndex]);
         }
         fetchData();
     }, []);

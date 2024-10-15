@@ -2,6 +2,7 @@ import './App.css';
 import Raw from './Rows.jsx'
 import requests from './requests.js';
 import Banner from './Banner.jsx';
+import Nav from './Nav.jsx';
 
 // 27ab8be554458dc2e8d27a5f378e0908 api key
 ///base:https://api.themoviedb.org/3/movie/550
@@ -9,6 +10,7 @@ import Banner from './Banner.jsx';
 function App() {
   return (
     <div className="App">
+      <Nav/>
       <Banner/>
       <Raw 
       title = "NERFLIX ORiGINAL" 

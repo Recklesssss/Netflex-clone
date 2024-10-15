@@ -1,6 +1,7 @@
 import './App.css';
 import Raw from './Rows.jsx'
 import requests from './requests.js';
+import Banner from './Banner.jsx';
 
 // 27ab8be554458dc2e8d27a5f378e0908 api key
 ///base:https://api.themoviedb.org/3/movie/550
@@ -8,6 +9,7 @@ import requests from './requests.js';
 function App() {
   return (
     <div className="App">
+      <Banner/>
       <Raw 
       title = "NERFLIX ORiGINAL" 
       fetchiURL = {requests.fetchNetflixOriginal}
